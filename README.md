@@ -3,6 +3,8 @@
 **Este es un CRUD hecho con django para agendar contactos y tareas en una especie de gestor común.**<br>
 
 Algunas características:<br>
+-Tanto en la parte de Contactos como en la de Tareas se pueden visualizar a detalle, editar y eliminar sus respectivos datos, además de añadir nuevos campos.<br>
+-También se puede filtrar la búsqueda de contactos a través de letras.<br>
 -La estructura del proyecto es el patrón de desarrollo web MVT.<br>
 -El código integra una base de datos relacional postgress.<br>
 -Y buenas prácticas de seguridad, ya que se vale del módulo django-environ para proteger claves privadas.<br>
