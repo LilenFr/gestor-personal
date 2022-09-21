@@ -1,0 +1,210 @@
+:root {
+    --color-primary: #f67b7d;
+    --color-secondary: #fbc3c4;
+    --color-tertiary: #644e4e;
+    --color-text: #666;
+    --font-title: dogica-pixel-bold;
+    --font-text: dogica;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: var(--font-text);
+    color: var(--font-text);
+}
+
+@font-face {
+    font-family: dogica-pixel-bold;
+    src: url('../fonts/dogica/TTF/dogicapixelbold.ttf');
+}
+
+@font-face {
+    font-family: dogica;
+    src: url('../fonts/dogica/TTF/dogica.ttf');
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: var(--font-title);
+}
+
+h1 {
+    font-family: var(--font-title);
+    font-size: 40px;
+    color: white;
+    text-shadow: -2px 0 var(--color-primary), 0 2px var(--color-primary), 2px 0 var(--color-primary), 0 -2px var(--color-primary);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 80px;
+    background-color: #f2f2f2;
+    /*border-bottom: 1px solid var(--color-text);*/
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    color: var(--color-secondary);
+    background-color: white;
+    padding: 20px;
+    margin: 5px;
+    border: 1px solid var(--color-primary);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+nav ul li a:hover {
+    color: black;
+    background-color: var(--color-secondary);
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+}
+
+body {
+    background-color: #fcd5d5;
+    overflow-x: hidden;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    margin: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--color-text);
+    width: 50%;
+    list-style-type: none;
+    background-color: white;
+}
+
+.list li {
+    padding: 15px;
+    width: 100%;
+    border-bottom: 1px solid var(--color-text);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn {
+    padding: 5px 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid var(--color-text);
+}
+
+.btn-detail {
+    background-color: #ffefcf;
+    color: black;
+}
+
+.btn-detail:hover {
+    background-color: black;
+    color: #ffefcf;
+}
+
+.btn-edit {
+    background-color: #cfdcc3;
+    color: black
+}
+
+.btn-edit:hover {
+    background-color: black;
+    color: #cfdcc3;
+}
+
+.btn-delete {
+    background-color: #a7b8be;
+    color: black;
+}
+
+.btn-delete:hover {
+    background-color: black;
+    color: #a7b8be;
+}
+
+.search {
+    margin: 30px;
+}
+
+.search-bar {
+    padding: 10px;
+}
+
+.search-btn {
+    padding: 10px;
+    outline: none;
+}
+
+.aux-btns {
+    width: 50%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 20px;
+}
+
+.aux-btns a {
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.alert-success {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid var(--color-text);
+    background-color: var(--color-primary);
+    color: white;
+}
+
+.cards {
+    margin: 30px;
+    display: flex;
+    justify-content: space-around; 
+}
+
+.card {
+    width: 350px;
+    height: 250px;
+    margin-top: 40px;
+    margin-right: 30px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card:hover {
+    color: var(--color-primary);
+}
+
+.card a {
+    text-decoration: none;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.letters {
+    margin-bottom: 20px;
+}
